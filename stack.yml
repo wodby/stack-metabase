@@ -1,7 +1,6 @@
 name: metabase
 title: Metabase
 icon: metabase
-docs: https://wodby.com/docs/2.0/stacks/catalog/metabase/
 
 services:
 - name: metabase

@@ -12,7 +12,6 @@ composition.
 
 - [Metabase stack on Wodby](https://wodby.com/stacks/metabase)
 - [Browse Wodby application stacks](https://wodby.com/stacks)
-- [Metabase stack guide](https://wodby.com/docs/2.0/stacks/catalog/metabase/)
 - [Wodby stack documentation](https://wodby.com/docs/2.0/stacks/)
 - [Stack manifest reference](https://wodby.com/docs/2.0/stacks/template/)
 
