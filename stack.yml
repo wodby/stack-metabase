@@ -1,0 +1,31 @@
+name: metabase
+title: Metabase
+icon: metabase
+
+services:
+- name: metabase
+  title: Metabase
+  service: metabase
+  required: true
+  main: true
+  links:
+  - name: postgres
+    service: postgres
+  - name: sendmail
+    service: opensmtpd
+
+# Metabase's application database: users, questions, dashboards and settings.
+- name: postgres
+  title: PostgreSQL
+  service: postgres
+  required: true
+  volumes:
+  - name: data
+    size: 10
+
+# Metabase sends invitations, password resets and subscriptions by email. Its
+# SMTP settings can be entered in Metabase instead.
+- name: opensmtpd
+  title: OpenSMTPD
+  service: opensmtpd
+  disabled: true
