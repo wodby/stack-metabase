@@ -14,18 +14,6 @@ services:
     service: postgres
   - name: sendmail
     service: opensmtpd
-  # The JVM sizes its heap from the memory limit, so Metabase needs one.
-  workloads:
-  - name: main
-    containers:
-    - name: metabase
-      resources:
-        request:
-          cpu: 500
-          memory: 1536
-        limit:
-          cpu: 2000
-          memory: 3072
 
 # Metabase's application database: users, questions, dashboards and settings.
 - name: postgres
